@@ -101,6 +101,7 @@ class TNTSearch
         } else {
             $this->index = new PDO('mysql:dbname=' . $this->config['storage_database'] . ';host=' . $this->config['storage_host'], $this->config['storage_username'], $this->config['storage_password']);
         }
+
         $this->index->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->setStemmer();
     }
