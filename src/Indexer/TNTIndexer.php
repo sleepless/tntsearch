@@ -23,7 +23,7 @@ class TNTIndexer
     protected $index              = null;
     protected $dbh                = null;
     protected $primaryKey         = null;
-    protected $prefix             = '';
+    public $prefix                = '';
     public $stemmer               = null;
     public $tokenizer             = null;
     public $filereader            = null;

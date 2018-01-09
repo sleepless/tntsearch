@@ -462,6 +462,7 @@ class TNTSearch
     {
         $indexer           = new TNTIndexer;
         $indexer->inMemory = false;
+        $indexer->prefix   = $this->prefix;
         $indexer->setIndex($this->index);
         $indexer->setStemmer($this->stemmer);
         return $indexer;
